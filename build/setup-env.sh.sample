@@ -1,0 +1,2 @@
+export SOURCERY_PATH=/tools/bin/sourcery-arm-embedded
+export CMSIS=/home/david/micromouse/cmsis

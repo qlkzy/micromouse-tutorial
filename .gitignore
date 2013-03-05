@@ -1,3 +1,4 @@
 *.o
 *.bin
 build/deps.mk
+build/setup-env.sh
