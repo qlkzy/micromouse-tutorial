@@ -1,57 +1,35 @@
-USER := $(shell whoami)
 
-# setup conditional paths for CS dept
-# all variables set in here can be overidden from environment
-include host.mk
+USER:=$(shell whoami)
 
-# setup paths to tools
-include tools.mk
+-include host.mk
 
-# toolchain flags for the mbed target
-include mbed.mk
+-include tools.mk
 
+-include mbed.mk
 
-OBJDIR = obj
+EXECNAME	= bin/serial
 
-# project variables
-BIN = bin/serial
-SRC = serial.o 
-OBJ = $(addprefix $(OBJDIR)/,$(SRC:.c=.o))
+OBJ		= serial.o 
 
-# rules
-
-.PHONY: all clean
-
-all: serial
+all: 	serial
 	@echo "Build finished"
 
-# changes to the makefile should trigger a full rebuild; we could hash
-# the makefile/options, but it's not worth it on a project this size
-$(OBJ): Makefile
 
-$(BIN).elf: $(OBJ)
-	$(CC) $(LDFLAGS) -o $(BIN) $(OBJ) -Wl,--start-group $(LDLIBS) -Wl,--end-group $(LDLIBS)
-	$(OBJCOPY) -I elf32-little -O binary $(BIN) $(BIN).bin
-
-%.bin: %.elf
-	$(OBJCOPY) -I elf32-little -O binary $< $@
-
-$(OBJDIR)/%.o: 
+serial: $(OBJ)
+	$(CC) -o $(EXECNAME) $(OBJ) $(LDFLAGS) $(LDLIBS)
+	$(OBJCOPY) -I elf32-little -O binary $(EXECNAME) $(EXECNAME).bin
 
 # clean out the source tree ready to re-build
 clean:
-	-rm -f bin/*
-	-rm -f obj/*
-
+	rm -f `find . | grep \~`
+	rm -f *.swp *.o */*.o */*/*.o  *.log
+	rm -f *.d */*.d *.srec */*.a bin/*.map
+	rm -f *.elf *.wrn bin/*.bin log *.hex
+	rm -f $(EXECNAME)
 # install software to board, remember to sync the file systems
 install:
-	@echo "Copying " $(BIN) "to the MBED file system"
-	cp $(BIN).bin $(MBED_PATH)
+	@echo "Copying " $(EXECNAME) "to the MBED file system"
+	cp $(EXECNAME).bin /run/media/$(USER)/MBED &
 	sync
 	@echo "Now press the reset button on all MBED file systems"
 
-
-deps.mk: 
-	$(CC) -MM $(SRC) | perl -pe "s/^(\S+.o)/$(OBJDIR)\/\1/;" > deps.mk
-
--include deps.mk
