@@ -1,35 +1,30 @@
+include build/framework.mk
 
-USER:=$(shell whoami)
+OBJDIR = obj
+BINDIR = bin
 
--include host.mk
+BIN	= serial.bin
 
--include tools.mk
+SRC	= serial.c
 
--include mbed.mk
+OBJ	= $(addprefix $(OBJDIR)/,$(SRC:.c=.o))
 
-EXECNAME	= bin/serial
+.PHONY: all clean install
 
-OBJ		= serial.o 
-
-all: 	serial
+all: $(BINDIR)/$(BIN)
 	@echo "Build finished"
-
-
-serial: $(OBJ)
-	$(CC) -o $(EXECNAME) $(OBJ) $(LDFLAGS) $(LDLIBS)
-	$(OBJCOPY) -I elf32-little -O binary $(EXECNAME) $(EXECNAME).bin
 
 # clean out the source tree ready to re-build
 clean:
-	rm -f `find . | grep \~`
-	rm -f *.swp *.o */*.o */*/*.o  *.log
-	rm -f *.d */*.d *.srec */*.a bin/*.map
-	rm -f *.elf *.wrn bin/*.bin log *.hex
-	rm -f $(EXECNAME)
+	-rm -rf $(OBJDIR) $(BINDIR)
+	-rm -f build/deps.mk
+
 # install software to board, remember to sync the file systems
 install:
-	@echo "Copying " $(EXECNAME) "to the MBED file system"
-	cp $(EXECNAME).bin /run/media/$(USER)/MBED &
+	@echo "Copying " $(BIN) "to the MBED file system"
+	cp $(BIN).bin $(MBED_PATH)
 	sync
 	@echo "Now press the reset button on all MBED file systems"
 
+# implicit rules & auto dependencies
+include build/rules.mk

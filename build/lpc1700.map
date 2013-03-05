@@ -1,11 +1,11 @@
 Archive member included because of file (symbol)
 
 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
-                              serial.o (strlen)
+                              obj/serial.o (strlen)
 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
-                              serial.o (PINSEL_ConfigPin)
+                              obj/serial.o (PINSEL_ConfigPin)
 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
-                              serial.o (UART_Init)
+                              obj/serial.o (UART_Init)
 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
                               /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o) (CLKPWR_GetPCLK)
 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
@@ -30,7 +30,7 @@ Linker script and memory map
 
 LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
 LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
-LOAD serial.o
+LOAD obj/serial.o
 LOAD /home/david/micromouse/cmsis/lib/core_cm3.o
 LOAD /home/david/micromouse/cmsis/lib/system_LPC17xx.o
 LOAD /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
@@ -79,17 +79,17 @@ END GROUP
  *(.text .text.* .gnu.linkonce.t.*)
  .text          0x000000dc        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
  .text          0x000000dc       0x30 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
- .text          0x0000010c        0x0 serial.o
- .text.main     0x0000010c       0x28 serial.o
+ .text          0x0000010c        0x0 obj/serial.o
+ .text.main     0x0000010c       0x28 obj/serial.o
                 0x0000010c                main
  .text.read_usb_serial_none_blocking
-                0x00000134       0x2c serial.o
+                0x00000134       0x2c obj/serial.o
                 0x00000134                read_usb_serial_none_blocking
  .text.write_usb_serial_blocking
-                0x00000160       0x2c serial.o
+                0x00000160       0x2c obj/serial.o
                 0x00000160                write_usb_serial_blocking
  .text.serial_init
-                0x0000018c       0x90 serial.o
+                0x0000018c       0x90 obj/serial.o
                 0x0000018c                serial_init
  .text          0x0000021c        0x0 /home/david/micromouse/cmsis/lib/core_cm3.o
  .text          0x0000021c        0x0 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
@@ -301,7 +301,7 @@ END GROUP
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x00002538       0x1c serial.o
+ .rodata        0x00002538       0x1c obj/serial.o
  .rodata        0x00002554       0x10 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  .ARM.extab.cs3.reset
@@ -381,7 +381,7 @@ END GROUP
  .data          0x10000004        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
  .data          0x10000004        0x4 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
                 0x10000004                __dso_handle
- .data          0x10000008        0x0 serial.o
+ .data          0x10000008        0x0 obj/serial.o
  .data          0x10000008        0x0 /home/david/micromouse/cmsis/lib/core_cm3.o
  .data          0x10000008        0x0 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
  .data.SystemCoreClock
@@ -408,7 +408,7 @@ END GROUP
  *(.bss .bss.* .gnu.linkonce.b.*)
  .bss           0x10000010        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
  .bss           0x10000010        0x1 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
- .bss           0x10000011        0x0 serial.o
+ .bss           0x10000011        0x0 obj/serial.o
  .bss           0x10000011        0x0 /home/david/micromouse/cmsis/lib/core_cm3.o
  .bss           0x10000011        0x0 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
  .bss           0x10000011        0x0 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
@@ -469,7 +469,7 @@ END GROUP
  *(.debug_sfnames)
 
 .comment        0x00000000       0x2a
- .comment       0x00000000       0x2a serial.o
+ .comment       0x00000000       0x2a obj/serial.o
                                  0x2b (size before relaxing)
  .comment       0x00000000       0x2b /home/david/micromouse/cmsis/lib/core_cm3.o
  .comment       0x00000000       0x2b /home/david/micromouse/cmsis/lib/system_LPC17xx.o
@@ -481,7 +481,7 @@ END GROUP
 .debug_aranges  0x00000000      0x248
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x38 serial.o
+                0x00000000       0x38 obj/serial.o
  .debug_aranges
                 0x00000038       0x28 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
  .debug_aranges
@@ -499,7 +499,7 @@ END GROUP
                 0x00000000      0x462
  *(.debug_pubnames)
  .debug_pubnames
-                0x00000000       0x6b serial.o
+                0x00000000       0x6b obj/serial.o
  .debug_pubnames
                 0x0000006b       0x4f /home/david/micromouse/cmsis/lib/system_LPC17xx.o
  .debug_pubnames
@@ -513,7 +513,7 @@ END GROUP
 
 .debug_info     0x00000000     0x2913
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x551 serial.o
+ .debug_info    0x00000000      0x551 obj/serial.o
  .debug_info    0x00000551       0x68 /home/david/micromouse/cmsis/lib/core_cm3.o
  .debug_info    0x000005b9      0x509 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
  .debug_info    0x00000ac2       0xc1 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
@@ -524,7 +524,7 @@ END GROUP
 
 .debug_abbrev   0x00000000      0x7aa
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x186 serial.o
+ .debug_abbrev  0x00000000      0x186 obj/serial.o
  .debug_abbrev  0x00000186       0x28 /home/david/micromouse/cmsis/lib/core_cm3.o
  .debug_abbrev  0x000001ae      0x102 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
  .debug_abbrev  0x000002b0       0x12 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
@@ -535,7 +535,7 @@ END GROUP
 
 .debug_line     0x00000000     0x121f
  *(.debug_line)
- .debug_line    0x00000000      0x167 serial.o
+ .debug_line    0x00000000      0x167 obj/serial.o
  .debug_line    0x00000167       0x1d /home/david/micromouse/cmsis/lib/core_cm3.o
  .debug_line    0x00000184      0x1e4 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
  .debug_line    0x00000368       0xb1 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
@@ -546,7 +546,7 @@ END GROUP
 
 .debug_frame    0x00000000      0x6c8
  *(.debug_frame)
- .debug_frame   0x00000000       0x90 serial.o
+ .debug_frame   0x00000000       0x90 obj/serial.o
  .debug_frame   0x00000090       0x40 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
  .debug_frame   0x000000d0       0x20 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
  .debug_frame   0x000000f0       0xbc /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
@@ -558,7 +558,7 @@ END GROUP
 
 .debug_str      0x00000000     0x109d
  *(.debug_str)
- .debug_str     0x00000000      0x3a1 serial.o
+ .debug_str     0x00000000      0x3a1 obj/serial.o
                                 0x3eb (size before relaxing)
  .debug_str     0x000003a1       0x42 /home/david/micromouse/cmsis/lib/core_cm3.o
                                  0xd2 (size before relaxing)
@@ -575,7 +575,7 @@ END GROUP
 
 .debug_loc      0x00000000      0xaaa
  *(.debug_loc)
- .debug_loc     0x00000000       0xe0 serial.o
+ .debug_loc     0x00000000       0xe0 obj/serial.o
  .debug_loc     0x000000e0       0x58 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
  .debug_loc     0x00000138      0x150 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
  .debug_loc     0x00000288      0x65a /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
@@ -608,7 +608,7 @@ END GROUP
  .ARM.attributes
                 0x00000019       0x29 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
  .ARM.attributes
-                0x00000042       0x31 serial.o
+                0x00000042       0x31 obj/serial.o
  .ARM.attributes
                 0x00000073       0x31 /home/david/micromouse/cmsis/lib/core_cm3.o
  .ARM.attributes
@@ -638,12 +638,12 @@ END GROUP
 
 /DISCARD/
  *(.note.GNU-stack)
-OUTPUT(bin/serial elf32-littlearm)
+OUTPUT(bin/serial.elf elf32-littlearm)
 
 .debug_pubtypes
                 0x00000000      0x491
  .debug_pubtypes
-                0x00000000       0xf7 serial.o
+                0x00000000       0xf7 obj/serial.o
  .debug_pubtypes
                 0x000000f7       0x12 /home/david/micromouse/cmsis/lib/core_cm3.o
  .debug_pubtypes
@@ -658,7 +658,7 @@ OUTPUT(bin/serial elf32-littlearm)
                 0x00000466       0x2b /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
 
 .debug_ranges   0x00000000      0x1e0
- .debug_ranges  0x00000000       0x28 serial.o
+ .debug_ranges  0x00000000       0x28 obj/serial.o
  .debug_ranges  0x00000028       0x18 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
  .debug_ranges  0x00000040       0x20 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
  .debug_ranges  0x00000060       0x38 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
