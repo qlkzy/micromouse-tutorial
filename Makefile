@@ -20,9 +20,9 @@ clean:
 	-rm -f build/deps.mk
 
 # install software to board, remember to sync the file systems
-install:
+install: $(BINDIR)/$(BIN)
 	@echo "Copying " $(BIN) "to the MBED file system"
-	cp $(BIN).bin $(MBED_PATH)
+	cp $< $(MBED_PATH)
 	sync
 	@echo "Now press the reset button on all MBED file systems"
 

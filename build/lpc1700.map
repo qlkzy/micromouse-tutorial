@@ -1,21 +1,21 @@
 Archive member included because of file (symbol)
 
-/tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
+/usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
                               obj/serial.o (strlen)
-/home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+/usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
                               obj/serial.o (PINSEL_ConfigPin)
-/home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+/usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                               obj/serial.o (UART_Init)
-/home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
-                              /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o) (CLKPWR_GetPCLK)
-/home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
-                              /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o) (check_failed)
-/tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
+/usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                              /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o) (CLKPWR_GetPCLK)
+/usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+                              /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o) (check_failed)
+/usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
                               (__cs3_start_c)
-/tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
-                              /home/david/micromouse/cmsis/lib/startup_LPC17xx.o (_start)
-/tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
-                              /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3.a(start_c.o) (__libc_init_array)
+/usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
+                              /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o (_start)
+/usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+                              /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3.a(start_c.o) (__libc_init_array)
 
 Memory Configuration
 
@@ -28,31 +28,31 @@ ram2             0x20080000         0x00004000         xrw
 
 Linker script and memory map
 
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
 LOAD obj/serial.o
-LOAD /home/david/micromouse/cmsis/lib/core_cm3.o
-LOAD /home/david/micromouse/cmsis/lib/system_LPC17xx.o
-LOAD /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libg.a
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libstdc++.a
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libsupc++.a
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libgcc.a
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libm.a
-LOAD /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a
+LOAD /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/core_cm3.o
+LOAD /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
+LOAD /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libg.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libstdc++.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libsupc++.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libgcc.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libm.a
+LOAD /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a
 START GROUP
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libgcc.a
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libgcc.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a
 END GROUP
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
 START GROUP
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libgcc.a
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3.a
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3unhosted.a
-LOAD /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3micro.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libgcc.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3unhosted.a
+LOAD /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3micro.a
 END GROUP
                 0x10008000                PROVIDE (__cs3_stack, (__cs3_region_start_ram + __cs3_region_size_ram))
                 0x00007fe8                PROVIDE (__cs3_stack_size, ((__cs3_region_start_ram + __cs3_region_size_ram) - _end))
@@ -66,19 +66,19 @@ END GROUP
                 0x00000000                __cs3_interrupt_vector = __cs3_interrupt_vector_cortex_m
  *(.cs3.interrupt_vector)
  .cs3.interrupt_vector
-                0x00000000       0xcc /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
+                0x00000000       0xcc /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
                 0x00000000                __cs3_interrupt_vector_cortex_m
                 0x00000001                ASSERT ((. != __cs3_interrupt_vector_cortex_m), No interrupt vector)
  *(.rom)
  *(.rom.b)
                 0x000000cc                __cs3_reset = __cs3_reset_cortex_m
  *(.cs3.reset)
- .cs3.reset     0x000000cc       0x10 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
+ .cs3.reset     0x000000cc       0x10 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
                 0x000000cc                __cs3_reset_cortex_m
                 0x00000001                ASSERT ((. != __cs3_reset), No reset code)
  *(.text .text.* .gnu.linkonce.t.*)
- .text          0x000000dc        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
- .text          0x000000dc       0x30 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
+ .text          0x000000dc        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
+ .text          0x000000dc       0x30 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
  .text          0x0000010c        0x0 obj/serial.o
  .text.main     0x0000010c       0x28 obj/serial.o
                 0x0000010c                main
@@ -91,15 +91,15 @@ END GROUP
  .text.serial_init
                 0x0000018c       0x90 obj/serial.o
                 0x0000018c                serial_init
- .text          0x0000021c        0x0 /home/david/micromouse/cmsis/lib/core_cm3.o
- .text          0x0000021c        0x0 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
+ .text          0x0000021c        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/core_cm3.o
+ .text          0x0000021c        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
  .text.SystemCoreClockUpdate
-                0x0000021c      0x228 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
+                0x0000021c      0x228 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
                 0x0000021c                SystemCoreClockUpdate
  .text.SystemInit
-                0x00000444      0x240 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
+                0x00000444      0x240 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
                 0x00000444                SystemInit
- .text          0x00000684       0x14 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
+ .text          0x00000684       0x14 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
                 0x00000684                NMI_Handler
                 0x00000686                HardFault_Handler
                 0x00000688                MemManage_Handler
@@ -145,152 +145,152 @@ END GROUP
                 0x00000696                UART3_IRQHandler
                 0x00000696                MCPWM_IRQHandler
                 0x00000696                ENET_IRQHandler
- .text          0x00000698       0x60 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
+ .text          0x00000698       0x60 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
                 0x00000698                strlen
- .text          0x000006f8        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+ .text          0x000006f8        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
  .text.set_PinFunc
-                0x000006f8       0xa0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+                0x000006f8       0xa0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
  .text.set_ResistorMode
-                0x00000798       0xa0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+                0x00000798       0xa0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
  .text.set_OpenDrainMode
-                0x00000838       0x80 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+                0x00000838       0x80 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
  .text.PINSEL_ConfigTraceFunc
-                0x000008b8       0x54 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+                0x000008b8       0x54 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
                 0x000008b8                PINSEL_ConfigTraceFunc
  .text.PINSEL_SetI2C0Pins
-                0x0000090c       0x3c /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+                0x0000090c       0x3c /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
                 0x0000090c                PINSEL_SetI2C0Pins
  .text.PINSEL_ConfigPin
-                0x00000948       0x54 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+                0x00000948       0x54 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
                 0x00000948                PINSEL_ConfigPin
- .text          0x0000099c        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .text          0x0000099c        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
  .text.uart_set_divisors
-                0x0000099c      0x26c /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x0000099c      0x26c /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
  .text.UART_Init
-                0x00000c08      0x368 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00000c08      0x368 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00000c08                UART_Init
  .text.UART_DeInit
-                0x00000f70       0xcc /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00000f70       0xcc /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00000f70                UART_DeInit
  .text.UART_ConfigStructInit
-                0x0000103c       0x34 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x0000103c       0x34 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x0000103c                UART_ConfigStructInit
  .text.UART_SendByte
-                0x00001070       0x78 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001070       0x78 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001070                UART_SendByte
  .text.UART_ReceiveByte
-                0x000010e8       0x78 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x000010e8       0x78 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x000010e8                UART_ReceiveByte
  .text.UART_Send
-                0x00001160      0x10c /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001160      0x10c /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001160                UART_Send
  .text.UART_Receive
-                0x0000126c       0xd8 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x0000126c       0xd8 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x0000126c                UART_Receive
  .text.UART_ForceBreak
-                0x00001344       0x88 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001344       0x88 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001344                UART_ForceBreak
  .text.UART_IntConfig
-                0x000013cc      0x1d0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x000013cc      0x1d0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x000013cc                UART_IntConfig
  .text.UART_GetLineStatus
-                0x0000159c       0x7c /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x0000159c       0x7c /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x0000159c                UART_GetLineStatus
  .text.UART_GetIntId
-                0x00001618       0x68 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001618       0x68 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001618                UART_GetIntId
  .text.UART_CheckBusy
-                0x00001680       0x2c /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001680       0x2c /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001680                UART_CheckBusy
  .text.UART_FIFOConfig
-                0x000016ac      0x184 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x000016ac      0x184 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x000016ac                UART_FIFOConfig
  .text.UART_FIFOConfigStructInit
-                0x00001830       0x34 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001830       0x34 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001830                UART_FIFOConfigStructInit
  .text.UART_ABCmd
-                0x00001864      0x15c /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001864      0x15c /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001864                UART_ABCmd
  .text.UART_ABClearIntPending
-                0x000019c0       0x88 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x000019c0       0x88 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x000019c0                UART_ABClearIntPending
  .text.UART_TxCmd
-                0x00001a48       0xe8 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001a48       0xe8 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001a48                UART_TxCmd
  .text.UART_IrDAInvtInputCmd
-                0x00001b30       0x84 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001b30       0x84 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001b30                UART_IrDAInvtInputCmd
  .text.UART_IrDACmd
-                0x00001bb4       0x80 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001bb4       0x80 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001bb4                UART_IrDACmd
  .text.UART_IrDAPulseDivConfig
-                0x00001c34       0xac /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001c34       0xac /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001c34                UART_IrDAPulseDivConfig
  .text.UART_FullModemForcePinState
-                0x00001ce0       0xcc /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001ce0       0xcc /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001ce0                UART_FullModemForcePinState
  .text.UART_FullModemConfigMode
-                0x00001dac       0xd8 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001dac       0xd8 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001dac                UART_FullModemConfigMode
  .text.UART_FullModemGetStatus
-                0x00001e84       0x38 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001e84       0x38 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001e84                UART_FullModemGetStatus
  .text.UART_RS485Config
-                0x00001ebc      0x1bc /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00001ebc      0x1bc /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00001ebc                UART_RS485Config
  .text.UART_RS485ReceiverCmd
-                0x00002078       0x48 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00002078       0x48 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00002078                UART_RS485ReceiverCmd
  .text.UART_RS485Send
-                0x000020c0       0x84 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x000020c0       0x84 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x000020c0                UART_RS485Send
  .text.UART_RS485SendSlvAddr
-                0x00002144       0x28 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00002144       0x28 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x00002144                UART_RS485SendSlvAddr
  .text.UART_RS485SendData
-                0x0000216c       0x28 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x0000216c       0x28 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                 0x0000216c                UART_RS485SendData
- .text          0x00002194        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+ .text          0x00002194        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
  .text.CLKPWR_SetPCLKDiv
-                0x00002194       0xd4 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x00002194       0xd4 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
                 0x00002194                CLKPWR_SetPCLKDiv
  .text.CLKPWR_GetPCLKSEL
-                0x00002268       0x54 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x00002268       0x54 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
                 0x00002268                CLKPWR_GetPCLKSEL
  .text.CLKPWR_GetPCLK
-                0x000022bc       0x70 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x000022bc       0x70 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
                 0x000022bc                CLKPWR_GetPCLK
  .text.CLKPWR_ConfigPPWR
-                0x0000232c       0x80 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x0000232c       0x80 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
                 0x0000232c                CLKPWR_ConfigPPWR
  .text.CLKPWR_Sleep
-                0x000023ac       0x1c /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x000023ac       0x1c /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
                 0x000023ac                CLKPWR_Sleep
  .text.CLKPWR_DeepSleep
-                0x000023c8       0x2c /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x000023c8       0x2c /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
                 0x000023c8                CLKPWR_DeepSleep
  .text.CLKPWR_PowerDown
-                0x000023f4       0x2c /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x000023f4       0x2c /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
                 0x000023f4                CLKPWR_PowerDown
  .text.CLKPWR_DeepPowerDown
-                0x00002420       0x2c /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x00002420       0x2c /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
                 0x00002420                CLKPWR_DeepPowerDown
- .text          0x0000244c        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+ .text          0x0000244c        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
  .text.check_failed
-                0x0000244c        0xc /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+                0x0000244c        0xc /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
                 0x0000244c                check_failed
- .text          0x00002458        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
- .text          0x00002458        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
- .text          0x00002458       0x30 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
+ .text          0x00002458        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
+ .text          0x00002458        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
+ .text          0x00002458       0x30 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
                 0x00002458                __cs3_premain
  .text.cs3.init
-                0x00002488       0x50 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
+                0x00002488       0x50 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
                 0x00002488                __cs3_start_c
- .text          0x000024d8        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
+ .text          0x000024d8        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
  .text.cs3.init
-                0x000024d8       0x10 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
+                0x000024d8       0x10 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
                 0x000024d8                _start
- .text          0x000024e8       0x50 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+ .text          0x000024e8       0x50 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
                 0x000024e8                __libc_init_array
  *(.plt)
  *(.gnu.warning)
@@ -302,18 +302,18 @@ END GROUP
  .vfp11_veneer  0x00000000        0x0 linker stubs
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata        0x00002538       0x1c obj/serial.o
- .rodata        0x00002554       0x10 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .rodata        0x00002554       0x10 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  .ARM.extab.cs3.reset
-                0x00002564        0x0 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
+                0x00002564        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
                 0x00002564                . = ALIGN (0x4)
  *(.init)
- .init          0x00002564        0x4 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
+ .init          0x00002564        0x4 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
                 0x00002564                _init
- .init          0x00002568        0x8 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
+ .init          0x00002568        0x8 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
                 0x00002570                . = ALIGN (0x4)
                 0x00002570                __preinit_array_start = .
  *(.preinit_array)
@@ -322,7 +322,7 @@ END GROUP
                 0x00002570                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x00002570        0x4 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
+ .init_array    0x00002570        0x4 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
                 0x00002574                __init_array_end = .
                 0x00002574                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
@@ -331,13 +331,13 @@ END GROUP
  *crtend.o(.ctors)
                 0x00002574                . = ALIGN (0x4)
  *(.fini)
- .fini          0x00002574        0x4 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
+ .fini          0x00002574        0x4 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
                 0x00002574                _fini
- .fini          0x00002578        0x8 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
+ .fini          0x00002578        0x8 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
                 0x00002580                . = ALIGN (0x4)
                 0x00002580                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x00002580        0x4 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
+ .fini_array    0x00002580        0x4 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
                 0x00002584                __fini_array_end = .
  *crtbegin.o(.dtors)
@@ -359,7 +359,7 @@ END GROUP
 .ARM.exidx      0x00002598        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
  .ARM.exidx.cs3.reset
-                0x00002598        0x8 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
+                0x00002598        0x8 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
                 0x000025a0                __exidx_end = .
 
 .text.align     0x000025a0        0x0
@@ -372,32 +372,32 @@ END GROUP
                 0x10000000                __cs3_region_start_ram = .
  *(.cs3.region-head.ram)
  *(.jcr)
- .jcr           0x10000000        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
- .jcr           0x10000000        0x4 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
+ .jcr           0x10000000        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
+ .jcr           0x10000000        0x4 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x10000004        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
- .data          0x10000004        0x4 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
+ .data          0x10000004        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
+ .data          0x10000004        0x4 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
                 0x10000004                __dso_handle
  .data          0x10000008        0x0 obj/serial.o
- .data          0x10000008        0x0 /home/david/micromouse/cmsis/lib/core_cm3.o
- .data          0x10000008        0x0 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
+ .data          0x10000008        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/core_cm3.o
+ .data          0x10000008        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
  .data.SystemCoreClock
-                0x10000008        0x4 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
+                0x10000008        0x4 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
                 0x10000008                SystemCoreClock
- .data          0x1000000c        0x0 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
- .data          0x1000000c        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
- .data          0x1000000c        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
- .data          0x1000000c        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
- .data          0x1000000c        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
- .data          0x1000000c        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
- .data          0x1000000c        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
- .data          0x1000000c        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
- .data          0x1000000c        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
- .data          0x1000000c        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
- .data          0x1000000c        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+ .data          0x1000000c        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
+ .data          0x1000000c        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
+ .data          0x1000000c        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+ .data          0x1000000c        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .data          0x1000000c        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+ .data          0x1000000c        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+ .data          0x1000000c        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
+ .data          0x1000000c        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
+ .data          0x1000000c        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
+ .data          0x1000000c        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
+ .data          0x1000000c        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
  *(.ram)
                 0x10000010                . = ALIGN (0x8)
  *fill*         0x1000000c        0x4 00
@@ -406,22 +406,22 @@ END GROUP
 .bss            0x10000010        0x8 load address 0x000025b0
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x10000010        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
- .bss           0x10000010        0x1 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
+ .bss           0x10000010        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
+ .bss           0x10000010        0x1 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
  .bss           0x10000011        0x0 obj/serial.o
- .bss           0x10000011        0x0 /home/david/micromouse/cmsis/lib/core_cm3.o
- .bss           0x10000011        0x0 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
- .bss           0x10000011        0x0 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
- .bss           0x10000011        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
- .bss           0x10000011        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
- .bss           0x10000011        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
- .bss           0x10000011        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
- .bss           0x10000011        0x0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
- .bss           0x10000011        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
- .bss           0x10000011        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
- .bss           0x10000011        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
- .bss           0x10000011        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
- .bss           0x10000011        0x0 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+ .bss           0x10000011        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/core_cm3.o
+ .bss           0x10000011        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
+ .bss           0x10000011        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
+ .bss           0x10000011        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
+ .bss           0x10000011        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+ .bss           0x10000011        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .bss           0x10000011        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+ .bss           0x10000011        0x0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+ .bss           0x10000011        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
+ .bss           0x10000011        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
+ .bss           0x10000011        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
+ .bss           0x10000011        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
+ .bss           0x10000011        0x0 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
  *(COMMON)
  *(.ram.b)
                 0x10000018                . = ALIGN (0x8)
@@ -434,13 +434,13 @@ END GROUP
 
 .heap           0x10000018     0x1000
  *(.heap)
- .heap          0x10000018     0x1000 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
+ .heap          0x10000018     0x1000 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
                 0x10000018                __cs3_heap_start
                 0x10001018                __cs3_heap_end
 
 .stack          0x10007f00      0x100
  *(.stack)
- .stack         0x10007f00      0x100 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
+ .stack         0x10007f00      0x100 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
                 0x10007f00                __cs3_stack_mem
                 0x10008000                _estack = .
                 0x10008000                PROVIDE (estack, .)
@@ -471,29 +471,29 @@ END GROUP
 .comment        0x00000000       0x2a
  .comment       0x00000000       0x2a obj/serial.o
                                  0x2b (size before relaxing)
- .comment       0x00000000       0x2b /home/david/micromouse/cmsis/lib/core_cm3.o
- .comment       0x00000000       0x2b /home/david/micromouse/cmsis/lib/system_LPC17xx.o
- .comment       0x00000000       0x2b /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
- .comment       0x00000000       0x2b /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
- .comment       0x00000000       0x2b /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
- .comment       0x00000000       0x2b /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+ .comment       0x00000000       0x2b /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/core_cm3.o
+ .comment       0x00000000       0x2b /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
+ .comment       0x00000000       0x2b /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+ .comment       0x00000000       0x2b /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .comment       0x00000000       0x2b /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+ .comment       0x00000000       0x2b /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
 
 .debug_aranges  0x00000000      0x248
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x38 obj/serial.o
  .debug_aranges
-                0x00000038       0x28 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
+                0x00000038       0x28 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
  .debug_aranges
-                0x00000060       0x28 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
+                0x00000060       0x28 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
  .debug_aranges
-                0x00000088       0x48 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+                0x00000088       0x48 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
  .debug_aranges
-                0x000000d0      0x100 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x000000d0      0x100 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
  .debug_aranges
-                0x000001d0       0x58 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x000001d0       0x58 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
  .debug_aranges
-                0x00000228       0x20 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+                0x00000228       0x20 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
 
 .debug_pubnames
                 0x00000000      0x462
@@ -501,86 +501,86 @@ END GROUP
  .debug_pubnames
                 0x00000000       0x6b obj/serial.o
  .debug_pubnames
-                0x0000006b       0x4f /home/david/micromouse/cmsis/lib/system_LPC17xx.o
+                0x0000006b       0x4f /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
  .debug_pubnames
-                0x000000ba       0x59 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+                0x000000ba       0x59 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
  .debug_pubnames
-                0x00000113      0x271 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00000113      0x271 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
  .debug_pubnames
-                0x00000384       0xbb /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x00000384       0xbb /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
  .debug_pubnames
-                0x0000043f       0x23 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+                0x0000043f       0x23 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
 
 .debug_info     0x00000000     0x2913
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x551 obj/serial.o
- .debug_info    0x00000551       0x68 /home/david/micromouse/cmsis/lib/core_cm3.o
- .debug_info    0x000005b9      0x509 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
- .debug_info    0x00000ac2       0xc1 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
- .debug_info    0x00000b83      0x4b5 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
- .debug_info    0x00001038     0x114d /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
- .debug_info    0x00002185      0x6c5 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
- .debug_info    0x0000284a       0xc9 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+ .debug_info    0x00000551       0x68 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/core_cm3.o
+ .debug_info    0x000005b9      0x509 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
+ .debug_info    0x00000ac2       0xc1 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
+ .debug_info    0x00000b83      0x4b5 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+ .debug_info    0x00001038     0x114d /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .debug_info    0x00002185      0x6c5 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+ .debug_info    0x0000284a       0xc9 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
 
 .debug_abbrev   0x00000000      0x7aa
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x186 obj/serial.o
- .debug_abbrev  0x00000186       0x28 /home/david/micromouse/cmsis/lib/core_cm3.o
- .debug_abbrev  0x000001ae      0x102 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
- .debug_abbrev  0x000002b0       0x12 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
- .debug_abbrev  0x000002c2      0x11d /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
- .debug_abbrev  0x000003df      0x1ce /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
- .debug_abbrev  0x000005ad      0x195 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
- .debug_abbrev  0x00000742       0x68 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+ .debug_abbrev  0x00000186       0x28 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/core_cm3.o
+ .debug_abbrev  0x000001ae      0x102 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
+ .debug_abbrev  0x000002b0       0x12 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
+ .debug_abbrev  0x000002c2      0x11d /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+ .debug_abbrev  0x000003df      0x1ce /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .debug_abbrev  0x000005ad      0x195 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+ .debug_abbrev  0x00000742       0x68 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
 
-.debug_line     0x00000000     0x121f
+.debug_line     0x00000000     0x123a
  *(.debug_line)
- .debug_line    0x00000000      0x167 obj/serial.o
- .debug_line    0x00000167       0x1d /home/david/micromouse/cmsis/lib/core_cm3.o
- .debug_line    0x00000184      0x1e4 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
- .debug_line    0x00000368       0xb1 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
- .debug_line    0x00000419      0x220 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
- .debug_line    0x00000639      0x888 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
- .debug_line    0x00000ec1      0x29a /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
- .debug_line    0x0000115b       0xc4 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+ .debug_line    0x00000000      0x182 obj/serial.o
+ .debug_line    0x00000182       0x1d /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/core_cm3.o
+ .debug_line    0x0000019f      0x1e4 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
+ .debug_line    0x00000383       0xb1 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
+ .debug_line    0x00000434      0x220 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+ .debug_line    0x00000654      0x888 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .debug_line    0x00000edc      0x29a /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+ .debug_line    0x00001176       0xc4 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
 
 .debug_frame    0x00000000      0x6c8
  *(.debug_frame)
  .debug_frame   0x00000000       0x90 obj/serial.o
- .debug_frame   0x00000090       0x40 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
- .debug_frame   0x000000d0       0x20 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
- .debug_frame   0x000000f0       0xbc /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
- .debug_frame   0x000001ac      0x3a0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
- .debug_frame   0x0000054c       0xe4 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
- .debug_frame   0x00000630       0x2c /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
- .debug_frame   0x0000065c       0x40 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
- .debug_frame   0x0000069c       0x2c /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+ .debug_frame   0x00000090       0x40 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
+ .debug_frame   0x000000d0       0x20 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
+ .debug_frame   0x000000f0       0xbc /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+ .debug_frame   0x000001ac      0x3a0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .debug_frame   0x0000054c       0xe4 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+ .debug_frame   0x00000630       0x2c /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+ .debug_frame   0x0000065c       0x40 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
+ .debug_frame   0x0000069c       0x2c /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
 
-.debug_str      0x00000000     0x109d
+.debug_str      0x00000000     0x10ae
  *(.debug_str)
- .debug_str     0x00000000      0x3a1 obj/serial.o
-                                0x3eb (size before relaxing)
- .debug_str     0x000003a1       0x42 /home/david/micromouse/cmsis/lib/core_cm3.o
+ .debug_str     0x00000000      0x3b2 obj/serial.o
+                                0x3fc (size before relaxing)
+ .debug_str     0x000003b2       0x42 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/core_cm3.o
                                  0xd2 (size before relaxing)
- .debug_str     0x000003e3      0x1d9 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
+ .debug_str     0x000003f4      0x1d9 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
                                 0x2d5 (size before relaxing)
- .debug_str     0x000005bc      0x235 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+ .debug_str     0x000005cd      0x235 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
                                 0x359 (size before relaxing)
- .debug_str     0x000007f1      0x7b8 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .debug_str     0x00000802      0x7b8 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
                                 0xb32 (size before relaxing)
- .debug_str     0x00000fa9       0xc4 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+ .debug_str     0x00000fba       0xc4 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
                                 0x380 (size before relaxing)
- .debug_str     0x0000106d       0x30 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+ .debug_str     0x0000107e       0x30 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
                                 0x107 (size before relaxing)
 
 .debug_loc      0x00000000      0xaaa
  *(.debug_loc)
  .debug_loc     0x00000000       0xe0 obj/serial.o
- .debug_loc     0x000000e0       0x58 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
- .debug_loc     0x00000138      0x150 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
- .debug_loc     0x00000288      0x65a /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
- .debug_loc     0x000008e2      0x190 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
- .debug_loc     0x00000a72       0x38 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+ .debug_loc     0x000000e0       0x58 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
+ .debug_loc     0x00000138      0x150 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+ .debug_loc     0x00000288      0x65a /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .debug_loc     0x000008e2      0x190 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+ .debug_loc     0x00000a72       0x38 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -604,37 +604,37 @@ END GROUP
                 0x00000000       0x25
  *(.ARM.attributes)
  .ARM.attributes
-                0x00000000       0x19 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
+                0x00000000       0x19 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crti.o
  .ARM.attributes
-                0x00000019       0x29 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
+                0x00000019       0x29 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtbegin.o
  .ARM.attributes
                 0x00000042       0x31 obj/serial.o
  .ARM.attributes
-                0x00000073       0x31 /home/david/micromouse/cmsis/lib/core_cm3.o
+                0x00000073       0x31 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/core_cm3.o
  .ARM.attributes
-                0x000000a4       0x31 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
+                0x000000a4       0x31 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
  .ARM.attributes
-                0x000000d5       0x21 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
+                0x000000d5       0x21 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
  .ARM.attributes
-                0x000000f6       0x29 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
+                0x000000f6       0x29 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
  .ARM.attributes
-                0x0000011f       0x31 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+                0x0000011f       0x31 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
  .ARM.attributes
-                0x00000150       0x31 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x00000150       0x31 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
  .ARM.attributes
-                0x00000181       0x31 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x00000181       0x31 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
  .ARM.attributes
-                0x000001b2       0x31 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+                0x000001b2       0x31 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
  .ARM.attributes
-                0x000001e3       0x29 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
+                0x000001e3       0x29 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtend.o
  .ARM.attributes
-                0x0000020c       0x19 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
+                0x0000020c       0x19 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/crtn.o
  .ARM.attributes
-                0x00000225       0x29 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
+                0x00000225       0x29 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3.a(start_c.o)
  .ARM.attributes
-                0x0000024e       0x19 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
+                0x0000024e       0x19 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libcs3unhosted.a(unhosted-start.o)
  .ARM.attributes
-                0x00000267       0x29 /tools/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+                0x00000267       0x29 /usr/local/pkg/sourcery-g++-lite-arm-eabi-2010.09.51-i686-1/arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
 
 /DISCARD/
  *(.note.GNU-stack)
@@ -645,23 +645,23 @@ OUTPUT(bin/serial.elf elf32-littlearm)
  .debug_pubtypes
                 0x00000000       0xf7 obj/serial.o
  .debug_pubtypes
-                0x000000f7       0x12 /home/david/micromouse/cmsis/lib/core_cm3.o
+                0x000000f7       0x12 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/core_cm3.o
  .debug_pubtypes
-                0x00000109       0x57 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
+                0x00000109       0x57 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
  .debug_pubtypes
-                0x00000160       0x76 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+                0x00000160       0x76 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
  .debug_pubtypes
-                0x000001d6      0x225 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+                0x000001d6      0x225 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
  .debug_pubtypes
-                0x000003fb       0x6b /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+                0x000003fb       0x6b /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
  .debug_pubtypes
-                0x00000466       0x2b /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+                0x00000466       0x2b /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
 
 .debug_ranges   0x00000000      0x1e0
  .debug_ranges  0x00000000       0x28 obj/serial.o
- .debug_ranges  0x00000028       0x18 /home/david/micromouse/cmsis/lib/system_LPC17xx.o
- .debug_ranges  0x00000040       0x20 /home/david/micromouse/cmsis/lib/startup_LPC17xx.o
- .debug_ranges  0x00000060       0x38 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
- .debug_ranges  0x00000098       0xf0 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
- .debug_ranges  0x00000188       0x48 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
- .debug_ranges  0x000001d0       0x10 /home/david/micromouse/cmsis/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)
+ .debug_ranges  0x00000028       0x18 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/system_LPC17xx.o
+ .debug_ranges  0x00000040       0x20 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/startup_LPC17xx.o
+ .debug_ranges  0x00000060       0x38 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_pinsel.o)
+ .debug_ranges  0x00000098       0xf0 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_uart.o)
+ .debug_ranges  0x00000188       0x48 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_clkpwr.o)
+ .debug_ranges  0x000001d0       0x10 /usr/local/pkg/lpc1700-cmsis-lite-2011.01.26-i686-1/lib/libDriversLPC17xxgnu.a(lpc17xx_libcfg_default.o)

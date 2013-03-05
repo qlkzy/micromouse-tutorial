@@ -9,7 +9,7 @@
 // Entery point for the program
 void main(void)
 {
-    const char *str = "USB test code version 2\r\n";
+    const char *str = "USB test code version 3\r\n";
 	serial_init();
 	write_usb_serial_blocking(str,strlen(str));
 	while(1);
